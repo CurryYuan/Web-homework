@@ -1,0 +1,26 @@
+section
+	h3 {{post.title}}
+	div {{post.text}}
+section.re
+	h2 reply
+	div.reply(ng-repeat="re in post.reply")
+		h4 user[{{re.username}}]:
+		div(ng-hide="isEdit") 
+			p(ng-show="re.isHide")
+				| 该内容已被管理员隐藏
+			p(ng-hide="re.isHide") {{re.text}}
+			a(ng-show="currentUser.username=='aaaaaaa' " ng-click="re.isHide=true;hideReply()") Hide
+			span(ng-show="currentUser.username==re.username&&currentUser.username=='aaaaaaa' ")
+				|   - 
+			a(ng-show="currentUser.username==re.username" ng-click="isEdit=true") Edit
+		div(ng-show="isEdit")
+			textarea(ng-model='re.text', cols='50', rows='15') 
+			br
+			a(ng-click="editReply();isEdit=false") Submit
+section
+	button.rep(ng-click="isClick=true" ng-init="isClick=false" ng-hide="isClick") Reply
+	div(ng-show="isClick")
+		p Write reply here
+		textarea(ng-model='newReply')
+		br
+		button.rep(ng-click="submitReply()") Reply

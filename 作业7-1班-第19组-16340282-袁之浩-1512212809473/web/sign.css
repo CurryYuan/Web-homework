@@ -1,0 +1,44 @@
+body
+{
+	text-align: center;
+	background-color: #EEF2F5;
+}
+input
+{
+	margin: 10px;
+	color: blue;
+}
+button
+{
+	margin: 10px;
+	background-color: #1B9AF7;
+	border-color: #1B9AF7;
+	color: #FFF;
+	font-size: 15px;
+   	height: 30px;
+    	line-height: 30px;
+    	padding: 0 30px;
+    	border-radius: 200px;
+}
+button:hover
+{
+	cursor: pointer;
+	opacity: 0.7;
+}
+#user
+{
+	position: relative;
+	left: -9px;
+}
+#d1
+{
+	background: white;
+	width: 500px;
+	border: 1px solid gray;
+	margin: 50px auto;
+}
+#info
+{
+	color:red;
+	height: 30px;
+}

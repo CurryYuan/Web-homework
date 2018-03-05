@@ -1,0 +1,96 @@
+body {
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+form div:not(.error) {
+  margin: 20px;
+  text-align: center;
+}
+
+form label {
+  display: inline-block;
+  width: 70px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+form input {
+  width: 60%;
+  height: 30px;
+  font-size: 18px;
+}
+
+.error {
+  color: #D01919;
+}
+
+form div.error {
+  margin: 10px 0px 20px 80px;
+  line-height: 24px;
+}
+
+form p.error {
+}
+
+div.buttons {
+  text-align: center;
+}
+
+form input.button{
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  margin: 5px;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  transition: all 0.2s;
+}
+button{
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  margin: 5px;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  transition: all 0.2s;  
+}
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1); 
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.button.reset {
+  background-color: #D01919;
+}
+
+.submit{
+  background-color: #16AB39;
+}
+
+.signup{
+  background-color: rgb(51, 153, 255);
+}
+
+.de{
+  margin: 30px;
+  text-align: center;
+}

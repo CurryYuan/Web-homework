@@ -1,0 +1,133 @@
+/* app css stylesheet */
+body{
+    background-color: #F6F4F0;
+}
+.con{
+    min-height: 600px;
+    padding: 30px;
+    position: relative;
+    top: -20px;
+    background-color: white;
+    max-width: 982px;
+    margin: 0 auto;
+}
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+button{
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  margin: 5px;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  vertical-align: middle;
+  transition: all 0.2s;  
+}
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1); 
+}
+.logout{
+    background-color: #898181;
+}
+.title{
+    z-index: 1;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  line-height: 12px;
+  top:0;
+  left: 0;
+  margin: 0;
+  background-color: #00b8ff
+}
+.title button{
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  float: right;
+}
+.bd{
+  position: relative;
+  top: 50px;
+}
+.title span{
+    float: right;
+    position: relative;
+    right: 100px;
+    color: white;
+}
+.reply{
+     padding-bottom:10px;
+    border-bottom: 1px dashed #7b7070;
+}
+.re{
+      background-color: #f5f6f7;
+}
+.rep{
+    background-color: #00b8ff;
+}
+textarea{
+    width: 99%;
+    height: 70px;
+}
+ul.pagination {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul.pagination li {
+    display: inline;
+    float: left;
+}
+ul.pagination li a{
+    text-decoration: none;
+    padding: 0px 20px;
+}
+ul.pagination .nonActive {
+    color: black;
+}
+ul.pagination .active {
+    background-color: #00b8ff;
+    color: white;
+}
+
+ul.pagination li:hover:not(.active) {
+    background-color: #ddd;
+}
+.highlightedText{
+    color:red;
+}
+

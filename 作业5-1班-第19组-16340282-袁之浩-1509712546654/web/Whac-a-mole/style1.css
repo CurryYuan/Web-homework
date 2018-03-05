@@ -1,0 +1,54 @@
+#p1{
+	font-size: 30px;
+	position: absolute;
+	left: 45%;
+}
+#p2{
+	font-size: 20px;
+	position: absolute;
+	left: 30%;
+	top:10%;
+}
+#d1{
+	position: absolute;
+	left: 35%;
+	top:15%;
+}
+#p3 button{
+	margin-right: 100px;
+}
+#p4 input{
+	margin-right: 100px;
+}
+table{
+	border: 2px solid black;
+	border-left: 0;
+	border-right: 0;
+	position: absolute;
+	left: 25%;
+	top:30%;
+	 border-collapse:collapse;
+}
+td{
+	margin: 0;
+	padding: 0;
+}
+.ra{
+	background-image: url(hole.jpg);
+	background-size: 100% 100%;
+	width: 80px;
+	height:60px;
+	margin: 0;
+	border: 0;
+}
+#p5{
+	font-size: 20px;
+	position: absolute;
+	left: 25%;
+	bottom: 14%;
+}
+#d2{
+	position: absolute;
+	left: 25%;
+	bottom: 5%;
+}

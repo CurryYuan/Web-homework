@@ -1,0 +1,66 @@
+canvas{
+	position: absolute;
+	left: 30%;
+	top:25%;
+}
+
+#d1{
+	font-size:20px;
+	width: 60px;
+	height: 60px;
+	background-color: #80FF80;
+	position: absolute;
+	top:393px;
+	left: 460px;
+}
+#d1 span{
+	position: relative;
+	left: 25px;
+	top:15px;
+}
+#d2 span{
+	position: relative;
+	left: 25px;
+	top:15px;
+}
+#d2{
+	font-size: 20px;
+	width: 60px;
+	height: 60px;
+	background-color: #8484FF;
+	position: absolute;
+	top:393px;
+	right: 473px;
+}
+
+.p1{
+	font-size: 30px;
+	position: absolute;
+	left: 38%;
+}
+.p2{
+	font-size: 20px;
+	position: absolute;
+	left: 38%;
+	top:8%;
+}
+.p3{
+	font-size: 20px;
+	position: absolute;
+	left: 25%;
+	top:15%;
+}
+.d3{
+	position: absolute;
+	left: 30%;
+	bottom: 15%;
+}
+.d3 img{
+	position: absolute;
+	left: 45%;
+}
+.d4{
+	position: absolute;
+	left: 30%;
+	bottom: 0;
+}

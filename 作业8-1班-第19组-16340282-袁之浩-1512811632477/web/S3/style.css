@@ -1,0 +1,164 @@
+html,body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#at-plus-container
+{
+  position: relative;
+  width: 180px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#bottom-positioner
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#control-ring-container
+{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  bottom: 20px;
+  left: 0px;
+  border-radius: 50%;
+}
+#info-bar
+{
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  bottom: 97px;
+  left: 77px;
+  border-radius: 50%;
+  background-color: #7E7E7E;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#button:hover #info-bar
+{
+  width: 130px;
+  height: 130px;
+  line-height: 130px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  bottom: 150px;
+  left: 25px;
+  opacity: 1;
+}
+#button
+{
+  width: 70px;
+  height: 70px;
+  margin: 75px 55px;
+}
+.apb
+{
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  bottom: 97px;
+  left: 77px;
+  border-radius: 50%;
+  background-image: url("assets/images/atplus_white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 15px;
+  background-color: #989fcf;
+  transition: all 0.5s;
+}
+#button:hover .apb 
+{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 85px;
+  left: 65px;
+  background-image: url("assets/images/atplus_green.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 30px;
+  background-color: #303F9F;
+}
+
+.button
+{
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+
+#button:hover .mask
+{
+  margin-top: 20px;
+  margin-left: -30px;
+  opacity: 1;
+}
+
+#button:hover .history
+{
+  margin-top: 60px;
+  margin-left: -40px;
+  opacity: 1;
+}
+#button:hover .message
+{
+  margin-top: 102px;
+  margin-left: -26px;
+  opacity: 1;
+}
+#button:hover .setting
+{
+  margin-top: 129px;
+  margin-left: 12px;
+  opacity: 1;
+}
+#button:hover .sign
+{
+  margin-top: 128px;
+  margin-left: 60px;
+  opacity: 1;
+}
+
+#a,#b,#c,#d,#e
+{
+  position: absolute;
+  right: -2px;
+  top:-10px;
+  color: white;
+  background-color: red;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+#control-ring li
+{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  margin-top: 60px;
+  margin-left: 35px;
+  border-radius: 50%;
+  list-style-type: none;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.gray
+{
+  background-color: rgba(144,144,144, 1);
+}

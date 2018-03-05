@@ -1,0 +1,19 @@
+p There are {{size}} posts
+div(ng-repeat='post in posts')
+	h3 {{post.title}} 
+	div {{post.text}}
+	a(href='/readPost/{{post.id}}') More
+	span(ng-show="post.user==currentUser.username")
+		|  - 
+		a(href='/	editPost/{{post.id}}') Edit
+		|  - 
+		a(href='/deletePost/{{post.id}}') Delete
+
+nav
+	ul.pagination
+		li
+			a(ng-click="Previous()") 上一页
+		li(ng-repeat="page in pageList" ng-class="{'active':isActivePage(page) ,'nonActive':!isActivePage(page)}")
+			a(ng-click="selectPage(page)") {{page}}
+		li
+			a(ng-click="Next()") 下一页

@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 用户登录
+  form(id='signin' method='post')
+    p {{error}}
+    if error
+      div.error.server!= error
+    div.field
+      label(for='username') 用户名
+      input(ng-model='user.username', id='username')
+      p.error 
+
+    div.field
+      label(for='password') 密码
+      input(ng-model='user.password',id='password' type='password')
+      p.error 
+
+    div.buttons
+      input.button.reset(type='reset' value='清除')
+      button.submit(ng-click='submitPost()' ) 登陆
+      button.signup(ng-click='toSignup()' ) 注册
+

@@ -1,0 +1,30 @@
+extends layout
+
+block body
+  div.title
+    h2 My Blog
+      span {{currentUser.username}}
+      button.logout(ng-click="logout()" ng-show="currentUser") logout
+  nav.ss(ng-show="currentUser")
+    div.inner
+      input.search_box(type='search' placeholder="Search..." ng-model="searchContent")
+      div.search(ng-click="Search()")
+        i.fa.fa-search
+      ul
+        li
+          a(href='/home' ng-click="searchContent=''") Home
+        li
+          a(href='/addPost') Add a new post
+        li
+          a(href='/detail') Information
+
+  div.con(ng-view)
+
+  script(src='js/lib/angular/angular.js')
+  script(src='js/app.js')
+  script(src='js/services.js')
+  script(src='js/controllers.js')
+  script(src='js/filters.js')
+  script(src='js/directives.js')
+  script(src='js/search.js')
+

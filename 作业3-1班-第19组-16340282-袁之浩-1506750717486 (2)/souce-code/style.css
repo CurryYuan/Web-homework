@@ -1,0 +1,233 @@
+#at-plus-container
+{
+  margin: 0 auto;
+}
+#bottom-positioner
+{
+  position: absolute;
+  bottom: 100px;
+  left: 40%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+#bottom-positioner:hover
+{
+  width: 300px;
+  height: 350px;
+}
+#control-ring-container
+{
+  opacity: 0;
+  transform: scale(0);
+  transition: all 1s;
+}
+#bottom-positioner:hover #control-ring-container
+{
+  opacity: 1;
+  transform: scale(1);
+}
+#info-bar
+{
+  position: absolute;
+  left: -25px;
+  top: -45px;
+}
+
+.info
+{
+  width: 140px;
+  height: 140px;
+  background-color: gray;
+  border-radius: 50%;
+  transform-origin: center;
+  opacity: 0;
+  transform: scale(0) translate(0);
+  transition: all 1s;
+}
+#bottom-positioner:hover .info
+{
+  opacity: 1;
+  transform: scale(1) translate(0,-120px);
+}
+.info li
+{
+  list-style-type: none;
+}
+.user
+{
+  position: relative;
+  left: 15px;
+  top: 10px;
+  color: white;
+}
+.user span
+{
+  position: relative;
+  left: 5px;
+  top: -5px
+}
+.comment
+{
+  position: relative;
+  left: 25px;
+  top: 28px;
+  color: white;
+  transform: scale(1.5);
+  font-weight: bold;
+}
+.comment span
+{
+  position: relative;
+  top: -5px;
+  left: 10px
+}
+.mine
+{
+  display: inline;
+  color: lime;
+  vertical-align: middle;
+}
+.mine span
+{
+  position: relative;
+  top: -5px;
+  left: 5px
+}
+.posted
+{
+  position: relative;
+  left: -5px;
+  top: 40px;
+  margin-right: 10%;
+}
+.like
+{
+  position: relative;
+  left: 0;
+  top: 40px;
+}
+#button
+{
+  position: absolute;
+  bottom: 80px;
+  left: 200px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(144,144,144, 1);
+  background-image: url("assets/images/atplus_white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  transition: all 1s;
+  transition-delay: 0.5s
+}
+#bottom-positioner:hover #button
+{
+  background-color: rgba(48, 63, 159, 1);
+  background-image: url("assets/images/atplus_green.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  transition: all 1s;
+}
+
+.mask
+{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(144,144,144, 1);
+  background-image: url("assets/images/mask.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+#bottom-positioner:hover .mask
+{
+  transform: translate(-70px,-30px);
+}
+.history
+{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(144,144,144, 1);
+  background-image: url("assets/images/history.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+#bottom-positioner:hover .history
+{
+  transform: translate(-100px,10px);
+}
+.message
+{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(144,144,144, 1);
+  background-image: url("assets/images/message.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+#bottom-positioner:hover .message
+{
+  transform: translate(-80px,55px);
+}
+.setting
+{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(144,144,144, 1);
+  background-image: url("assets/images/setting.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+#bottom-positioner:hover .setting
+{
+  transform: translate(-35px,80px);
+}
+.sign
+{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(144,144,144, 1);
+  background-image: url("assets/images/signin.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transition: transform 1s;
+}
+#bottom-positioner:hover .sign
+{
+  transform: translate(20px,80px);
+}
+.unread
+{
+  color: white;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  right: -25px;
+  top:-5px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+#control-ring li
+{
+  position: absolute;
+  top:0px;
+  left:20px;
+  list-style-type: none;
+  z-index: -1;
+}

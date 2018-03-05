@@ -1,0 +1,17 @@
+body
+{
+	text-align: center;
+	background-color: #EEF2F5;
+}
+p
+{
+	height: 20px;
+}
+div
+{
+	background: white;
+	width: 500px;
+	height: 300px;
+	border: 1px solid gray;
+	margin: 50px auto;
+}

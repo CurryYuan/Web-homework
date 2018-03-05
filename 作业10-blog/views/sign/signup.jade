@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  h1 用户注册
+  form(id='signup' method='post')
+    p {{error}}
+    if error
+      div.error.server!= error
+    div.field
+      label(for='username') 用户名
+      input(id='username', ng-model='user.username')
+      p.error 
+
+    div.field
+      label(for='password') 密码
+      input(id='password', ng-model='user.password' type='password')
+      p.error 
+
+    div.field
+      label(for='repeat-password') 重复密码
+      input(id='repeat-password' type='password')
+      p.error
+
+    div.field
+      label(for='email') 邮箱
+      input(id='email', ng-model='user.email')
+      p.error 
+
+    div.buttons
+      input.button.reset(type='reset' value='清除')
+      button.submit(ng-click='submitPost()') 注册
+
+  script(type='text/javascript' src='/js/validator.js')
+  script(type='text/javascript' src='/js/signup.js')
+
+
